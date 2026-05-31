@@ -1,0 +1,33 @@
+# Python build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+build/
+dist/
+.pytest_cache/
+
+# Virtualenvs
+.venv/
+venv/
+env/
+.python-version
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Local secrets
+.env
+.env.local
+
+# Heavy / generated artifacts — not part of the published repo.
+# These get populated by the scripts; downstream consumers don't need them
+# committed. Strip if you'd rather they live in git.
+models/
+outputs/
+results/

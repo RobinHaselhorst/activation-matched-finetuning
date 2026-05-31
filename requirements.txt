@@ -1,0 +1,19 @@
+# Install with: pip install -U -r requirements.txt
+# (the -U avoids a stale torch on GPU images that would skip the >=2.4 upgrade)
+
+transformers>=4.57.0
+torch>=2.4
+torchvision>=0.19          # pin matched to torch to avoid ABI mismatch
+accelerate
+datasets
+peft
+
+sentencepiece              # Llama / DeepSeek tokenizers
+protobuf
+tiktoken
+blobfile
+
+huggingface_hub[hf_transfer]
+
+matplotlib
+numpy
